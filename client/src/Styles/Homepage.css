@@ -1,0 +1,264 @@
+:root {
+    --tulip-color: #FF878D;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --button-hover-color: #e06666;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10vh;
+}
+
+/* Section with alternating layout for image and text */
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.section-container .section-left,
+.section-container .section-right {
+    width: 50%;
+}
+
+.section-left .background-img, 
+.section-right .background-img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+
+.section-left {
+    order: 1;
+}
+
+.section-right {
+    order: 2;
+}
+
+.section-content {
+    padding-left: 20px;
+    text-align: center;
+}
+
+.section-content h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: var(--tulip-color);
+}
+
+.section-content p {
+    color: #555;
+}
+
+.section-container:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive Design for Section */
+@media (max-width: 768px) {
+    .section-container {
+        flex-direction: column;
+    }
+
+    .section-left,
+    .section-right {
+        width: 100%;
+        order: unset; /* Reset the order on small screens */
+    }
+
+    .section-content {
+        padding-left: 0;
+    }
+}
+
+.background-img{
+    background-size: cover;   
+    background-position: center; 
+    background-repeat: no-repeat;  
+}
+
+.container-hover-effect:hover .background-img {
+    transform: scale(1.1) rotate(3deg); /* Slight zoom and rotation */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+
+/* Hero, Events, and Articles Sections (with images) */
+.hero-section, .events-section, .articles-section {
+    margin: 40px 0;
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.hero-section:hover, .events-section:hover, .articles-section:hover {
+    transform: translateY(-10px);
+}
+
+.hero-section button, .appointment-section button {
+    background-color: var(--tulip-color);
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section button:hover, .appointment-section button:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Wishlist Section */
+.wishlist-section {
+    text-align: center;
+    margin: 40px 0;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border-radius: 12px;
+}
+
+.wishlist-section div {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--background-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: background-color 0.3s ease;
+}
+
+.wishlist-section div:hover {
+    background-color: #f1f1f1;
+}
+
+.wishlist-section h3 {
+    color: var(--tulip-color);
+}
+
+/* Stores Section */
+.stores-section {
+    text-align: center;
+    margin: 40px 0;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border-radius: 12px;
+}
+
+.stores-section div {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--background-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: background-color 0.3s ease;
+}
+
+.stores-section div:hover {
+    background-color: #f1f1f1;
+}
+
+.stores-section h3 {
+    color: var(--tulip-color);
+}
+
+/* Appointment Section */
+.appointment-section {
+    text-align: center;
+    margin: 40px 0;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border-radius: 12px;
+}
+
+/* Social Section */
+.social-section {
+    text-align: center;
+    margin: 40px 0;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border-radius: 12px;
+}
+
+.social-section div {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.social-section div a {
+    text-decoration: none;
+    color: var(--tulip-color);
+    font-size: 20px;
+}
+
+.social-section div a:hover {
+    color: var(--button-hover-color);
+}
+
+/* Footer */
+.footerContainer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--tulip-color);
+    color: white;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px var(--shadow-color);
+}
+
+.footerContainer p {
+    margin: 0;
+}
+
+/* Responsive Design for Navigation, Wishlist, Stores, and Social Sections */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wishlist-section div, 
+    .stores-section div {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .section-container, .hero-section, .events-section, .articles-section {
+        padding: 20px;
+    }
+}

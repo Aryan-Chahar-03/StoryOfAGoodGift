@@ -1,0 +1,42 @@
+:root {
+    --tulip-color: #FF878D;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --button-hover-color: #e06666;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.EventPage{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10vh;
+}
+
+.EventHolder{
+    margin: 40px 0;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.EventHolder:hover{
+    transform: translateY(-10px);
+}
+
+.EditButton {
+    background-color: var(--tulip-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.EditButton:hover {
+    background-color: var(--button-hover-color);
+}
+

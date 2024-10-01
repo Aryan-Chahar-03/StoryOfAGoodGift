@@ -1,0 +1,99 @@
+.homepage {
+    padding: 0 20px;
+}
+
+.content-container {
+    margin-top: 20vh;
+}
+
+.Category-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.Category-box {
+    width: 15vw;
+    height: 20vh;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #f1f1f1;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Category-box.active,
+.Category-box:hover {
+    background-color: #eaeaea;
+    border: 2px solid blue;
+}
+
+.shop-section {
+    padding: 20px 0;
+    height: auto; /* Removed fixed height for better scrolling */
+    margin-bottom: 5vh;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.shop-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 gifts in a row */
+    grid-gap: 20px;
+}
+
+:root {
+    --tulip-color: #FF878D;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --button-hover-color: #e06666;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.shop-card button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.shop-card button.hearted {
+    color: red; /* Heart remains red when clicked */
+}
+
+.shop-card button:hover {
+    color: var(--button-hover-color); /* Optional hover effect */
+}
+
+.shop-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.gift-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.section-title-header{
+    text-align: center;
+  }

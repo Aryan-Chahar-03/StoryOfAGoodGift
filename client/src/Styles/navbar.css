@@ -1,0 +1,52 @@
+:root {
+    --section-bg-color: #f5f5f5; /* Background color for sections */
+    --text-color-primary: #333; /* Primary text color */
+    --text-color-secondary: #666; /* Secondary text color */
+    --button-bg-color: #007bff; /* Button background color */
+    --button-hover-bg-color: #0056b3; /* Button hover background color */
+    --shadow-color: rgba(0, 0, 0, 0.2); /* Shadow for the elements */
+}
+
+
+.navbar {
+    background-color: var(--tulip-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    position: fixed;
+    top : 0;
+    left : 0;
+    width: 98%;
+    z-index : 1;
+    
+}
+
+.navbar h1 {
+    margin: 0;
+    color: white;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #000;
+}
+
+.icon {
+    margin-left: 5px;
+}

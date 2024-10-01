@@ -1,0 +1,96 @@
+
+.addStory_mainContainer {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.addStory {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 5vh;
+    width: 50vw;
+    color :  #474444;
+    position: relative;
+}
+
+.addStory_header {
+    margin-bottom: 20px;
+    
+}
+
+.addStoryForm{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+
+}
+
+.addStoryInputField {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.addStoryInputField input,textarea,select{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #F4F4F4;
+}
+
+
+
+
+.addStoryButton {
+    color: black;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    width : 8vw;
+}
+
+.addStoryButton:hover {
+    background-color: #45a049;
+}
+
+.addStoryButtonDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding : 10px;
+    width: 80%;
+}
+
+.cancel{
+    position: absolute;
+    top : 2vh;
+    right:8vw;
+    background-color: red;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+}
+
+
+
+
